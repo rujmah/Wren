@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'sinatra/reloader'
 require 'mongoid'
 require 'haml'
 Mongoid.configure {|cfg| cfg.master = Mongo::Connection.new.db("sinatralist")}
